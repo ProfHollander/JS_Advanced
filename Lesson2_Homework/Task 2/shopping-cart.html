@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+<div class="container header">
+
+    <div class="brand-top">
+        <div class="brand-top-left">
+            <a href="index.html" class="brand">
+                <img src="img/logo.png" alt="logo">
+                BRAN
+                <span class="logo-D">D</span>
+            </a>
+            <form class="header-form" action="">
+                <div class="browse">
+                    <select name="Browse" id="">
+                        <option value="">Browse</option>
+                        <option value="">Option2</option>
+                    </select>
+                </div>
+                <input type="search" placeholder="Search for Item...">
+                <button type="submit"></button>
+            </form>
+        </div>
+
+        <div class="brand-top-right">
+            <a href="#"><img class="cart-top" src="img/cart.svg" alt="cart"></a>
+            <a href="chechout.html" class="my-account-button">My Account</a>
+        </div>
+    </div>
+
+    <div id="menu" class="navigation">
+
+    </div>
+</div>
+
+<div class="top-line-back">
+    <div class="container top-line">
+        <div class="top-line-left">
+            new arrivals
+        </div>
+        <div class="top-line-right">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">New arrivals</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container cart-items">
+    <div class="cart-header">
+        <div class="main-item-text">Product details</div>
+        <div class="item-title">Unite price</div>
+        <div class="item-title">Quantity</div>
+        <div class="item-title">Shipping</div>
+        <div class="item-title">Subtotal</div>
+        <div class="item-title">Action</div>
+    </div>
+    <div class="cart-item-row">
+        <div class="cart-item-main">
+            <img src="img/item-1.png" alt="" class="cart-item-main-img">
+            <div class="cart-item-main-text-field">
+                <div class="cart-item-main-text-field-top">mango people t-shirt</div>
+                <div class="cart-item-main-text-field-bot">Color: <span>Red</span></div>
+                <div class="cart-item-main-text-field-bot">Size: <span>XII</span></div>
+            </div>
+        </div>
+        <div class="cart-item-small">$150</div>
+        <div class="input-item-count">2</div>
+        <div class="cart-item-small">FREE</div>
+        <div class="cart-item-small">$300</div>
+        <div class="cart-item-small"><i class="fas fa-times-circle"></i></div>
+    </div>
+    <div class="cart-item-row">
+        <div class="cart-item-main">
+            <img src="img/item-2.png" alt="" class="cart-item-main-img">
+            <div class="cart-item-main-text-field">
+                <div class="cart-item-main-text-field-top">mango people t-shirt</div>
+                <div class="cart-item-main-text-field-bot">Color: <span>Red</span></div>
+                <div class="cart-item-main-text-field-bot">Size: <span>XII</span></div>
+            </div>
+        </div>
+        <div class="cart-item-small">$150</div>
+        <div class="input-item-count">2</div>
+        <div class="cart-item-small">FREE</div>
+        <div class="cart-item-small">$300</div>
+        <div class="cart-item-small"><i class="fas fa-times-circle"></i></div>
+    </div>
+    <div class="cart-item-row">
+        <div class="cart-item-main">
+            <img src="img/item-3.png" alt="" class="cart-item-main-img">
+            <div class="cart-item-main-text-field">
+                <div class="cart-item-main-text-field-top">mango people t-shirt</div>
+                <div class="cart-item-main-text-field-bot">Color: <span>Red</span></div>
+                <div class="cart-item-main-text-field-bot">Size: <span>XII</span></div>
+            </div>
+        </div>
+        <div class="cart-item-small">$150</div>
+        <div class="input-item-count">2</div>
+        <div class="cart-item-small">FREE</div>
+        <div class="cart-item-small">$300</div>
+        <div class="cart-item-small"><i class="fas fa-times-circle"></i></div>
+    </div>
+</div>
+
+<div class="container cart-buttons">
+    <a href="#" class="cart-button">Clear shopping cart</a>
+    <a href="#" class="cart-button">Continue shopping</a>
+</div>
+
+<div class="container cart-data">
+    <div class="cart-data-box">
+        <div class="cart-data-text-top">Shipping adress</div>
+        <select name="country" id="country" class="dropbox-country input-form">
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="India">India</option>
+        </select>
+        <input type="text" placeholder="State" class="input-form">
+        <input type="text" placeholder="Postcode/Zip" class="input-form">
+    </div>
+    <div class="cart-data-box">
+        <div class="cart-data-text-top">coupon discount</div>
+        <div class="cart-data-small-text">Enter your coupon code if you have one</div>
+        <input type="text" placeholder="Code" class="input-form">
+        <a href="#" class="quote-button-left">Apply coupon</a>
+    </div>
+    <div class="cart-data-box data-right">
+        <p class="total-small-text">SUB TOTAL $900</p>
+        <p class="total-big-text">GRAND TOTAL <span>$900</span></p>
+        <a href="#" class="checkout">Proceed to checkout</a>
+    </div>
+</div>
+
+<div class="container quote-button">
+    <a href="#" class="quote-button-left">Get a quote</a>
+</div>
+
+
+<footer>
+
+    <div class="subscribe">
+        <figure>
+            <img src="img/Bin-Burhan.png" alt="">
+            <figcaption>
+                <div class="quote-text">
+                    “Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                    a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”
+                </div>
+                <div class="quote-author">
+                    <div class="first-line-quote-text">
+                        Bin Burhan
+                    </div>
+                    <div class="second-line-quote-text">
+                        Dhaka, Bd
+                    </div>
+                </div>
+            </figcaption>
+        </figure>
+        <div class="sub">
+            <div class="sub-title">
+                <div class="first-line-sub-text">
+                    Subscribe
+                </div>
+                <div class="second-line-sub-text">
+                    FOR OUR NEWLETTER AND PROMOTION
+                </div>
+            </div>
+            <form action="" name="subscribe" class="sub-form">
+                <input type="text" class="sub-field" placeholder="Enter Your Email">
+                <input type="button" class="sub-button" value="Subscribe">
+            </form>
+        </div>
+    </div>
+
+    <div class="container footer-nav">
+        <a href="index.html" class="brand">
+            <img src="img/logo.png" alt="logo">
+            BRAN
+            <span class="logo-D">D</span>
+        </a>
+        <div class="footer-text">
+            <div class="first-footer-text">
+                Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate
+                multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of
+                processes and cross-unit partnerships.
+            </div>
+
+            <div class="second-footer-text">
+                Efficiently plagiarize 24/365 action items and focused infomediaries.
+                Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
+            </div>
+        </div>
+        <nav>
+            <div class="footer-nav-bar">
+                Company
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">How It Works</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-nav-bar">
+                Information
+                <ul>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">How to Buy</a></li>
+                    <li><a href="#">How to Sell</a></li>
+                    <li><a href="#">Promotion</a></li>
+                </ul>
+            </div>
+            <div class="footer-nav-bar">
+                Shop category
+                <ul>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Child</a></li>
+                    <li><a href="#">Apparel</a></li>
+                    <li><a href="#">Browse all</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+</footer>
+<div class="bottom-back">
+    <div class="container bottom">
+        <div class="copyright">
+            &copy; 2017 Brand All Rights Reserved
+        </div>
+        <div class="social">
+            <a href="#" class="social-links"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-links"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-links"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social-links"><i class="fab fa-pinterest-p"></i></a>
+            <a href="#" class="social-links"><i class="fab fa-google-plus-g"></i></a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
