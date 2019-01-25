@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RegExp</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        .textField {
+
+        }
+        input {
+            width: 200px;
+        }
+        button {
+            display: block;
+        }
+        .error {
+            background-color: hotpink;
+            color: black;
+            width: 350px;
+        }
+        .fail {
+            border-color: red;
+        }
+        .hidden {
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+<div id="origin" class="origin"></div>
+<button id="replace">Replace quotes</button>
+<div id="replaced" class="replaced"></div>
+
+<form id="feedback-form" class="feedback">
+    <p>Имя:</p>
+    <input type="text" name="name" placeholder="Введите ваше имя"/>
+    <div class="error hidden">Введите имя, содержащее только буквы</div>
+
+    <p>E-mail:</p>
+    <input type="text" name="e-mail" placeholder="Введите электронный адрес"/>
+    <div class="error hidden">Введите e-mail в формате mymail@mail.ru, или my.mail@mail.ru, или my-mail@mail.ru</div>
+
+    <p>Телефон:</p>
+    <input type="text" name="phone" placeholder="Введите номер телефона"/>
+    <div class="error hidden">Введите номер телефона в формате +7(000)000-0000</div>
+
+    <p>Сообщение:</p>
+    <textarea name="message" cols="40" rows="6" placeholder="Ваше сообщение"></textarea>
+
+    <button id="submit" type="submit">Отправить сообщение</button>
+</form>
+
+<script src="js/Homework_3.js"></script>
+</body>
+</html>
