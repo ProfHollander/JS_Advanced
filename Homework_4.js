@@ -29,8 +29,8 @@ $.ajax({
     success: function (data) {
         var $datalist = document.getElementById('townsJSON');
         data.towns.forEach(function (town) {
-            var option = document.createElement('option');
-            option.value = town;
+            var $option = document.createElement('option');
+            $option.value = town;
             $datalist.appendChild(option);
         })
     }
