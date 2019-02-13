@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        .content {
+            width: 600px;
+        }
+
+        .bookmarks-main {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+        }
+
+        .bookmark {
+            width: 200px;
+            height: 50px;
+            border: 1px solid black;
+            background-color: sandybrown;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .text-main {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .text {
+            border: 1px solid black;
+            background-color: greenyellow;
+        }
+
+        .hidden {
+            display: none;
+        }
+        .error {
+            background-color: hotpink;
+            color: black;
+            width: 350px;
+        }
+        .fail {
+            border-color: red;
+        }
+        .invis {
+            visibility: hidden;
+        }
+        button {
+            display: block;
+        }
+        .active {
+            background-color: hotpink;
+        }
+    </style>
+</head>
+<body>
+
+<div class="content">
+    <div id="bookmarks" class="bookmarks-main">
+        <div id="bookmark1" class="bookmark">1ый закон термодинамики</div>
+        <div id="bookmark2" class="bookmark">2ой закон термодинамики</div>
+        <div id="bookmark3" class="bookmark">3ий закон термодинамики</div>
+    </div>
+    <div id="text" class="text-main">
+        <div id="text1" class="text">Все количество теплоты, сообщаемое системе, идет на увеличение внутренней
+            энергии U системы и массы системы на величину увеличения эфиросодержания системы ΔМЭ;
+            при этом часть теплоты идет на увеличение температуры, а другая часть — на совершение работы
+            и эта часть может быть получена из системы только при соответствующем количестве работы,
+            произведенной над системой. Для элементарного количества теплоты ΔQ, элементарной работы ΔА
+            и бесконечно малого изменения dUТ энергии, связанной с изменением температуры,
+            первый закон термодинамики имеет вид:
+            ∆Q = ∆U = dUТ + ∆UА (∆A) = ∆МЭ·c2.
+        </div>
+        <div id="text2" class="text hidden">Невозможен процесс, единственным результатом которого является передача
+            энергии в форме теплоты от тела менее нагретого к телу более нагретому
+        </div>
+        <div id="text3" class="text hidden">Невозможен такой процесс, в результате которого тело могло бы быть
+            охлаждено до температуры абсолютного нуля (принцип недостижимости абсолютного нуля температуры)
+        </div>
+    </div>
+</div>
+
+<form id="feedback-form" class="feedback">
+    <p>Имя:</p>
+    <input type="text" name="name" placeholder="Введите ваше имя"/>
+    <div class="error invis">Введите имя, содержащее только буквы</div>
+
+    <p>E-mail:</p>
+    <input type="text" name="e-mail" placeholder="Введите электронный адрес"/>
+    <div class="error invis">Введите e-mail в формате mymail@mail.ru, или my.mail@mail.ru, или my-mail@mail.ru</div>
+
+    <p>Телефон:</p>
+    <input type="text" name="phone" placeholder="Введите номер телефона"/>
+    <div class="error invis">Введите номер телефона в формате +7(000)000-0000</div>
+
+    <p>Город:</p>
+    <input type="text" id="towns" list="townsJSON">
+    <datalist id="townsJSON"></datalist>
+
+    <p>Сообщение:</p>
+    <textarea name="message" cols="40" rows="6" placeholder="Ваше сообщение"></textarea>
+
+    <button id="submit" type="submit">Отправить сообщение</button>
+</form>
+
+<script src="js/Homework_4.js"></script>
+</body>
+</html>
+
